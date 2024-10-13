@@ -4,33 +4,32 @@
              xmlns:model="clr-namespace:Notify.Models"
              x:Class="Notify.MainPage"
              Shell.NavBarIsVisible="False">
-    <ScrollView>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30"/>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="30"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="25"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="25"/>
-            </Grid.RowDefinitions>
-            <Label
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Label
                 Text="Notify"
                 Grid.Column="1"
                 Grid.Row="1"
                 TextColor="{StaticResource Texture_Orange}"
                 FontFamily="Punk_regular"
                 FontSize="50"/>
-            <Label
+        <Label
                 Text="New"
                 Grid.Row="2"
                 Grid.Column="1"
@@ -38,7 +37,7 @@
                 FontFamily="Punk_regular"
                 FontSize="20"
                 TextDecorations="Underline"/>
-            <Label
+        <Label
                 Text="Select"
                 Grid.Row="3"
                 Grid.Column="1"
@@ -46,7 +45,7 @@
                 FontFamily="Punk_regular"
                 FontSize="20"
                 TextDecorations="Underline"/>
-            <Label
+        <Label
                 Text="Search"
                 Grid.Row="4"
                 Grid.Column="1"
@@ -54,7 +53,7 @@
                 FontFamily="Punk_regular"
                 FontSize="20"
                 TextDecorations="Underline"/>
-            <Label
+        <Label
                 Text="Settings"
                 Grid.Row="6"
                 Grid.Column="1"
@@ -63,14 +62,53 @@
                 FontFamily="Punk_regular"
                 FontSize="20"
                 TextDecorations="Underline"/>
+        <ScrollView
+            Orientation="Horizontal"
+            Grid.Row="2"
+            Grid.Column="2"
+            Grid.RowSpan="5"
+            Grid.ColumnSpan="2">
             <CollectionView
-                Grid.Row="2"
-                Grid.Column="2"
-                Grid.RowSpan="5"
-                Grid.ColumnSpan="2"
                 BackgroundColor="{StaticResource Accent_Gray}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout 
+                        Orientation="Horizontal" 
+                        Span="2"
+                        HorizontalItemSpacing="30"
+                        VerticalItemSpacing="30"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Note">
+                        <Frame
+                            BackgroundColor="{StaticResource Texture_Orange}"
+                            BorderColor="Transparent"
+                            CornerRadius="0">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="10"/>
+                                    <RowDefinition Height="100"/>
+                                    <RowDefinition Height="10"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="10"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    Text="{Binding Title}"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    TextColor="{StaticResource Theme_Dark}"
+                                    FontFamily="Punk_semibold"
+                                    FontSize="16"
+                                    TextDecorations="Underline"/>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
                 <CollectionView.ItemsSource>
-                    <x:Array Type="{x:Type}">
+                    <x:Array Type="{x:Type model:Note}">
                         <model:Note
                             Title="Entry"
                             Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
@@ -114,12 +152,51 @@ Also! Add a feature that marks when the entry was recorded. Also, note the cool 
                         <model:Note
                             Title="Entry"
                             Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                                Title="Entry"
+                                Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                                Title="Entry"
+                                Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
 More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
 Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
                     </x:Array>
                 </CollectionView.ItemsSource>
             </CollectionView>
-        </Grid>
-    </ScrollView>
-
+        </ScrollView>
+    </Grid>
 </ContentPage>
