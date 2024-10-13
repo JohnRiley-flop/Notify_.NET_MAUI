@@ -42,4 +42,12 @@
     <SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
     <SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
     <SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
+
+    <!-- App Theme Colors (Themes, Textures, Accents) -->
+    <Color x:Key="Theme_Dark">#0B151D</Color>
+    <Color x:Key="ThemeLight">#EEEEEE</Color>
+
+    <Color x:Key="Texture_Orange">#EC8B18</Color>
+
+    <Color x:Key="Accent_Gray">#748CAB</Color>
 </ResourceDictionary>

@@ -13,6 +13,8 @@ namespace Notify
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("punk-mono-regular.ttf", "Punk_regular");
+                    fonts.AddFont("punk-mono-semibold.ttf", "Punk_semibold");
                 });
 
 #if DEBUG

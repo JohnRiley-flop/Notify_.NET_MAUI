@@ -1,10 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Notify.MainPage">
-
+             x:Class="Notify.MainPage"
+             Shell.NavBarIsVisible="False">
     <ScrollView>
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Label
+                Text="Notify"
+                Grid.Column="1"
+                Grid.Row="1"
+                TextColor="{StaticResource Texture_Orange}"
+                FontFamily="Punk_regular"
+                FontSize="50"/>
+            <Label
+                Text="New"
+                Grid.Row="2"
+                Grid.Column="1"
+                TextColor="{StaticResource Texture_Orange}"
+                FontFamily="Punk_regular"
+                FontSize="20"
+                TextDecorations="Underline"/>
+            <Label
+                Text="Select"
+                Grid.Row="3"
+                Grid.Column="1"
+                TextColor="{StaticResource Texture_Orange}"
+                FontFamily="Punk_regular"
+                FontSize="20"
+                TextDecorations="Underline"/>
+            <Label
+                Text="Search"
+                Grid.Row="4"
+                Grid.Column="1"
+                TextColor="{StaticResource Texture_Orange}"
+                FontFamily="Punk_regular"
+                FontSize="20"
+                TextDecorations="Underline"/>
+            <Label
+                Text="Settings"
+                Grid.Row="6"
+                Grid.Column="1"
+                VerticalTextAlignment="End"
+                TextColor="{StaticResource Texture_Orange}"
+                FontFamily="Punk_regular"
+                FontSize="20"
+                TextDecorations="Underline"/>
         </Grid>
     </ScrollView>
 
