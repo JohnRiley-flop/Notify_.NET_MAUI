@@ -45,7 +45,7 @@
 
     <!-- App Theme Colors (Themes, Textures, Accents) -->
     <Color x:Key="Theme_Dark">#0B151D</Color>
-    <Color x:Key="ThemeLight">#EEEEEE</Color>
+    <Color x:Key="Theme_Light">#EEEEEE</Color>
 
     <Color x:Key="Texture_Orange">#EC8B18</Color>
 

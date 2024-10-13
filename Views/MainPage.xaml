@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:Notify.Models"
              x:Class="Notify.MainPage"
              Shell.NavBarIsVisible="False">
     <ScrollView>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="30"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="30"/>
@@ -62,6 +63,62 @@
                 FontFamily="Punk_regular"
                 FontSize="20"
                 TextDecorations="Underline"/>
+            <CollectionView
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.RowSpan="5"
+                Grid.ColumnSpan="2"
+                BackgroundColor="{StaticResource Accent_Gray}">
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type}">
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                        <model:Note
+                            Title="Entry"
+                            Entry="Also, big thing! The Entry title is clickable! This is just some example text. Filler, if you will. Also, hello Caroline.
+More filler text, yada yada. I am not sure how I feel about the whole orange thing, but I’m going to give it a try.
+Also! Add a feature that marks when the entry was recorded. Also, note the cool date format. Yeah, I thtought of that."/>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+            </CollectionView>
         </Grid>
     </ScrollView>
 
