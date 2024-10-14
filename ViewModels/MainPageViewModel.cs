@@ -15,7 +15,7 @@ namespace Notify.ViewModels
         public event PropertyChangedEventHandler? PropertyChanged;
 
         //Properties
-        public ObservableCollection<Note> ShowingEntries;
+        public ObservableCollection<Note> ShowingEntries { get; set; }
 
         public MainPageViewModel()
         {
@@ -33,7 +33,10 @@ namespace Notify.ViewModels
                 new Note { ID=1, Title="Entry", Entry="Fill"},
                 new Note { ID=1, Title="Entry", Entry="Fill"},
             ];
+
+
         }
+
 
 
         public void OnPropertyChanged([CallerMemberName] string name = "") =>
