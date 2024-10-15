@@ -1,5 +1,5 @@
 ﻿using Notify.ViewModels;
-namespace Notify
+namespace Notify.Views
 {
     public partial class MainPage : ContentPage
     {

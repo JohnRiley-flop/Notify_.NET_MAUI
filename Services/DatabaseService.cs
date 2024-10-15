@@ -12,6 +12,11 @@ namespace Notify.Services
     {
         SQLiteAsyncConnection Database;
 
+        public DatabaseService()
+        {
+            Init();
+        }
+
         async Task Init()
         {
             //Creates Database table for all Notes. Notes will have properties that sort them into respective folders when that feature is implemented.
@@ -23,9 +28,9 @@ namespace Notify.Services
             var result = await Database.CreateTableAsync<Note>();
         }
 
-        public async static Task AddNoteAsync(Note NewNote)
+        public async Task AddNoteAsync(Note NewNote)
         {
-
+            await Database.InsertAsync(new Note { ID=1, DateOfCreation=DateTime.Now, Entry="Hi", Title="Sigma"});
         }
     }
 }

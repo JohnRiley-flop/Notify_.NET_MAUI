@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:Notify.Models"
              xmlns:viewmodel="clr-namespace:Notify.ViewModels"
-             x:Class="Notify.MainPage"
+             x:Class="Notify.Views.MainPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.BindingContext>
         <viewmodel:MainPageViewModel/>
@@ -41,7 +41,8 @@
             TextColor="{StaticResource Texture_Orange}"
             FontFamily="Punk_regular"
             FontSize="20"
-            BackgroundColor="Transparent"/>
+            BackgroundColor="Transparent"
+            Command="{Binding GoToAddEntryPage}"/>
         <Button
             Text="Select"
             Grid.Row="3"

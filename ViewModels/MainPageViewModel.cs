@@ -46,7 +46,7 @@ namespace Notify.ViewModels
 
         private async void AddNewEntry()
         {
-            //await Shell.Current.GoToAsync("");
+            await Shell.Current.GoToAsync("AddNote");
         }
 
         private void UpdateList()
