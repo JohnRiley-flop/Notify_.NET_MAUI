@@ -9,8 +9,31 @@ namespace Notify.Models
     public class Note
     {
         public int ID { get; set; }
-        public required string Title { get; set; }
-        public required string Entry { get; set; }
+        private string title = "";
+        public string Title 
+        { 
+            get { return title; }
+            set
+            {
+                if (value == null)
+                    return;
+                else
+                    title = value;
+            } 
+        }
+
+        private string entry = "";
+        public string Entry
+        {
+            get { return entry; }
+            set
+            {
+                if (value == null)
+                    return;
+                else
+                    entry = value;
+            }
+        }
 
     }
 }
