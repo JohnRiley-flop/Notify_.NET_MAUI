@@ -27,45 +27,48 @@
             <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
         <Label
-                Text="Notify"
-                Grid.Column="1"
-                Grid.Row="1"
-                TextColor="{StaticResource Texture_Orange}"
-                FontFamily="Punk_regular"
-                FontSize="50"/>
-        <Label
-                Text="New"
-                Grid.Row="2"
-                Grid.Column="1"
-                TextColor="{StaticResource Texture_Orange}"
-                FontFamily="Punk_regular"
-                FontSize="20"
-                TextDecorations="Underline"/>
-        <Label
-                Text="Select"
-                Grid.Row="3"
-                Grid.Column="1"
-                TextColor="{StaticResource Texture_Orange}"
-                FontFamily="Punk_regular"
-                FontSize="20"
-                TextDecorations="Underline"/>
-        <Label
-                Text="Search"
-                Grid.Row="4"
-                Grid.Column="1"
-                TextColor="{StaticResource Texture_Orange}"
-                FontFamily="Punk_regular"
-                FontSize="20"
-                TextDecorations="Underline"/>
-        <Label
-                Text="Settings"
-                Grid.Row="6"
-                Grid.Column="1"
-                VerticalTextAlignment="End"
-                TextColor="{StaticResource Texture_Orange}"
-                FontFamily="Punk_regular"
-                FontSize="20"
-                TextDecorations="Underline"/>
+            Text="Notify"
+            Grid.Column="1"
+            Grid.Row="1"
+            TextColor="{StaticResource Texture_Orange}"
+            FontFamily="Punk_regular"
+            FontSize="50"/>
+        <Button
+            Text="New"
+            Grid.Row="2"
+            Grid.Column="1"
+            HorizontalOptions="Start"
+            TextColor="{StaticResource Texture_Orange}"
+            FontFamily="Punk_regular"
+            FontSize="20"
+            BackgroundColor="Transparent"/>
+        <Button
+            Text="Select"
+            Grid.Row="3"
+            Grid.Column="1"
+            HorizontalOptions="Start"
+            TextColor="{StaticResource Texture_Orange}"
+            FontFamily="Punk_regular"
+            FontSize="20"
+            BackgroundColor="Transparent"/>
+        <Button
+            Text="Search"
+            Grid.Row="4"
+            Grid.Column="1"
+            HorizontalOptions="Start"
+            TextColor="{StaticResource Texture_Orange}"
+            FontFamily="Punk_regular"
+            FontSize="20"
+            BackgroundColor="Transparent"/>
+        <Button
+            Text="Settings"
+            Grid.Row="6"
+            Grid.Column="1"
+            HorizontalOptions="Start"
+            TextColor="{StaticResource Texture_Orange}"
+            FontFamily="Punk_regular"
+            FontSize="20"
+            BackgroundColor="Transparent"/>
         <ScrollView
             Orientation="Horizontal"
             Grid.Row="2"

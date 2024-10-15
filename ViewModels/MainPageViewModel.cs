@@ -18,7 +18,7 @@ namespace Notify.ViewModels
         //Properties
         public ObservableCollection<Note> ShowingEntries { get; set; }
         //Commands
-        public Command AddNewEntryCommand { get; set; }
+        public Command GoToAddEntryPage { get; set; }
 
         public MainPageViewModel()
         {
@@ -39,18 +39,14 @@ namespace Notify.ViewModels
             ];
 
             //Commands to link front and back
-            AddNewEntryCommand = new (AddNewEntry);
+            GoToAddEntryPage = new (AddNewEntry);
 
 
         }
 
         private async void AddNewEntry()
         {
-            //Note toAdd = NAVIGATE TO ADD PAGE AND RETURN NEW NOTE ARGUMENTS
-            Note toAdd = new() { ID=1, Title="Note", Entry="Fill" };
-            if (null == toAdd) { return; }
-            await DatabaseService.AddNoteAsync(toAdd);
-            //Reload Page because a change was made
+            //await Shell.Current.GoToAsync("");
         }
 
         private void UpdateList()
