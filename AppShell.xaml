@@ -6,7 +6,6 @@
     xmlns:local="clr-namespace:Notify.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="Notify">
-
     <ShellContent
         Title="Main"
         ContentTemplate="{DataTemplate local:MainPage}"

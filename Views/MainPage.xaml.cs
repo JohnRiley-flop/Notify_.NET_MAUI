@@ -7,6 +7,8 @@ namespace Notify.Views
         {
             InitializeComponent();
             this.BindingContext = new MainPageViewModel();
+
+            NavigationPage.SetHasBackButton(this, false);
         }
     }
 

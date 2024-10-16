@@ -4,7 +4,8 @@
              xmlns:model="clr-namespace:Notify.Models"
              xmlns:viewmodel="clr-namespace:Notify.ViewModels"
              x:Class="Notify.Views.MainPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasBackButton="False">
     <ContentPage.BindingContext>
         <viewmodel:MainPageViewModel/>
     </ContentPage.BindingContext>

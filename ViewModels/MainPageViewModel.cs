@@ -25,22 +25,21 @@ namespace Notify.ViewModels
             //Displaying List of Entries
             ShowingEntries =
             [
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
-                new Note { ID=1, Title="Entry", Entry="Fill"},
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
+                new Note { ID=1, Title="Entry", Entry="Fill", DateOfCreation=DateTime.Now },
             ];
 
             //Commands to link front and back
             GoToAddEntryPage = new (AddNewEntry);
-
 
         }
 

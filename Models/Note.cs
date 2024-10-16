@@ -8,6 +8,10 @@ namespace Notify.Models
 {
     public class Note
     {
+        // Fields: (* - to add)
+        // ID, DateOfCreation
+        // Title, Entry, FolderNumber*
+
         public int ID { get; set; }
         public DateTime DateOfCreation { get; set; }
 
